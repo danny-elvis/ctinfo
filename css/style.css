@@ -46,37 +46,49 @@ nav {
     height: 8vh;
     width: 100%;
     border-top: 1px solid gainsboro;
+    /*! display: none; */
+    font-size: .8em;
+    background-color: #0071c5;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     height: inherit;
+    align-items: center;
 }
 
-nav ul li {
-    width: inherit;
+nav ul .btn {
+    width: 15%;
     text-align: center;
     border: 0px solid #a2a2a2;
-    background-color: whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
+    height: 80%;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #0079d3, #0066b1);
+    box-shadow:  5px 5px 6px #0063ad, -5px -5px 6px #007fdd;
+}
+
+nav ul .active {
+    background: linear-gradient(145deg, #0066b1, #0079d3);
+    box-shadow:  5px 5px 6px #0063ad, -5px -5px 6px #007fdd;
 }
 
 nav a {
     text-decoration: none;
     /*! text-shadow: 0 0 0px #005187; */
-    color: #004579;
-    font-size: 4vh;
-    padding: 5px 25px 4px 25px;
+    /*! color: #004579; */
+    /*! font-size: 4vh; */
+    /*! padding: 5px 25px 4px 25px; */
+    color: whitesmoke;
 }
 
 nav a p {
-    visibility: hidden;
-    font-size: 0;
+    /*! visibility: hidden; */
+    /*! font-size: 0; */
 }
 
 /* main {
@@ -138,6 +150,12 @@ main div {
         position: unset;
         border: 0;
         margin: auto;
+        background-color: whitesmoke;
+    }
+
+    nav ul .btn {
+        background: whitesmoke;
+        box-shadow: none;
     }
 
     nav i {
@@ -147,19 +165,24 @@ main div {
 
     nav a {
         padding: 0;
+        width: 80%;
+        height: 100%;
+        display: grid;
+        align-items: center;
     }
 
     nav a p {
-        visibility: visible;
+        /*! visibility: visible; */
         font-size: 2vh;
         font-family: ubuntu;
+        color: #005187;
     }
 
     main div{
         transition: .3s;
         position: absolute;
         left: 40vw;
-        top: 350px;
+        top: 330px;
         width: 44vw;
         opacity: 0.7;
         border-radius: 15px;
@@ -172,6 +195,7 @@ main div {
 
     main p{
         font-size: 2.4vw;
+        text-shadow: 0 0 60px black;
     }
 }
 
@@ -181,7 +205,7 @@ main div {
     }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1350px) {
     body {
         max-width: 75vw;
         margin: auto;
@@ -197,6 +221,6 @@ main div {
     
     main p{
         font-size: 1.5vw;
-        text-shadow: 0 0 60px black;
+        /*! text-shadow: 0 0 60px black; */
     }
 }
