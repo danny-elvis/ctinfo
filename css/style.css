@@ -110,6 +110,7 @@ main img {
     width: 100%;
     height: auto;
     border-top: 0.1px solid #005187;
+    transition: 2s;
 }
 
 main h1 {
